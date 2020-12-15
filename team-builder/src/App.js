@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import axios from 'axios'
 import './App.css';
 import TeamMemberForm from './components/TeamMemberForm'
 import TeamMember from './components/TeamMember'
@@ -40,6 +39,9 @@ const submitTeamForm = () => {
   }
 // prevent further action in the form if one of the inputs (fname, lname, email, role) is empty after trim
   if (!newMember.fname || !newMember.lname || !newMember.email || !newMember.role) return;
+
+  setTeamMembers(teamMembers.concat(newMember));
+  setFormValues(initialFormValues);
   
 }
 

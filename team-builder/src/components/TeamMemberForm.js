@@ -20,29 +20,29 @@ export default function TeamMemberForm(props) {
                 
                 <label>
                     First Name:
-                    <input name='fname' type='text' placeholder='Enter First Name...' maxLength='25' values={values.fname} onChange={onChange} /><br></br>
+                    <input name='fname' type='text' placeholder='Enter First Name...' maxLength='25' value={values.fname} onChange={onChange} /><br></br>
                 </label>
                 <label>
                     Last Name:
-                    <input name='lname' type='text' placeholder='Enter Last Name...' maxLength='25' values={values.lname} onChange={onChange} /><br></br>
+                    <input name='lname' type='text' placeholder='Enter Last Name...' maxLength='25' value={values.lname} onChange={onChange} /><br></br>
                 </label>
                 <label>
                     E-Mail:
-                    <input name='email' type='email' placeholder='Enter E-Mail...' maxLength='30' values={values.email} onChange={onChange} /><br></br>
+                    <input name='email' type='email' placeholder='Enter E-Mail...' maxLength='30' value={values.email} onChange={onChange} /><br></br>
                 </label>
                 <label>
                     Role:
                     <select name='role' values={values.role} onChange={onChange}>
                         <option value=''>-------Select Role-------</option>
-                        <option value='frontend'>Frontend Engineer</option>
-                        <option value='backend'>Backend Engineer</option>
-                        <option value='software'>Software Engineer</option>
-                        <option value='project'>Project Manager</option>
-                        <option value='designer'>Designer</option>
+                        <option value='Frontend Engineer'>Frontend Engineer</option>
+                        <option value='Backend Engineer'>Backend Engineer</option>
+                        <option value='Software Engineer'>Software Engineer</option>
+                        <option value='Project Manager'>Project Manager</option>
+                        <option value='Designer'>Designer</option>
                     </select>
                 </label>
 
-                <div>
+                <div className='submit'>
                     <button>Submit</button>
                 </div>
             </div>
