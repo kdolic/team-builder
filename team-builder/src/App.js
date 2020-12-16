@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './App.css';
 import TeamMemberForm from './components/TeamMemberForm'
 import TeamMember from './components/TeamMember'
